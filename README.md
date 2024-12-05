@@ -2,7 +2,7 @@
 
 Este proyecto combina un metrónomo y un sistema para tocar notas musicales utilizando un Arduino, sensores, y una pantalla LCD de **16x2**. A continuación, se describen las conexiones de hardware y el propósito de cada componente.
 
----
+
 
 ## **Componentes Requeridos**
 1. **Arduino Uno** o compatible.
@@ -13,7 +13,7 @@ Este proyecto combina un metrónomo y un sistema para tocar notas musicales util
 6. **Cables y protoboard**.
 7. **Fuente de alimentación o conexión USB**.
 
----
+
 
 ## **Esquema de Conexiones**
 
@@ -53,7 +53,7 @@ Este proyecto combina un metrónomo y un sistema para tocar notas musicales util
 - Conecta el otro terminal de cada sensor a `GND`.
 - Si usas botones, agrega resistencias pull-down de 10kΩ entre los pines del botón y `GND`.
 
----
+
 
 ## **Funcionalidad del Código**
 
@@ -69,7 +69,7 @@ Este proyecto combina un metrónomo y un sistema para tocar notas musicales util
 4. **Notas Musicales:**
    - Los sensores activan las notas `DO`, `RE`, `MI`, `FA`, y `SOL` con frecuencias ajustadas a la octava seleccionada.
 
----
+
 
 ## **Cómo Usar el Proyecto**
 
@@ -80,19 +80,10 @@ Este proyecto combina un metrónomo y un sistema para tocar notas musicales util
 5. **Toca los sensores para reproducir las notas musicales.**
 6. **Escucha el metrónomo para mantener el ritmo deseado.**
 
----
+
 
 ## **Actualizaciones para la Pantalla LCD de 16x2**
 
 El código está diseñado para trabajar con la pantalla **16x2**. Cambios relevantes:
 - El contenido mostrado en la pantalla se ajusta al espacio limitado de 16 caracteres por línea.
 - Las funciones `lcd.print` aseguran que los valores de octava y BPM se sobrescriban correctamente sin desbordar el texto.
-
----
-
-## **Notas Importantes**
-- Verifica la dirección I2C de la pantalla LCD antes de cargar el código. Usa un escáner I2C si es necesario.
-- Asegúrate de que los sensores o botones estén correctamente configurados para evitar lecturas erráticas.
-- Si el metrónomo no se detiene, ajusta los valores del potenciómetro de BPM para garantizar un intervalo correcto.
-
----
