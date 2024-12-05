@@ -1,7 +1,7 @@
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
-LiquidCrystal_I2C lcd(0x27, 20, 4);  // LCD
+LiquidCrystal_I2C lcd(0x27, 16, 2);  // LCD
 
 int octavaPot = A0;    // Pin del potenciómetro para seleccionar la octava
 int bpmPot = A1;       // Pin del potenciómetro para seleccionar el BPM
